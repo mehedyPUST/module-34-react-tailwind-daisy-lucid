@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "Basic Plan",
+        "price": "$20/month",
+        "description": "Essential gym access with core amenities.",
+        "popular": false,
+        "features": [
+            "Access to gym equipment",
+            "Locker facility",
+            "1 group class per week",
+            "Free WiFi",
+            "Changing room access",
+            "Basic fitness assessment",
+            "Water dispenser access"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Standard Plan",
+        "price": "$40/month",
+        "description": "Unlimited classes plus two personal training sessions monthly.",
+        "popular": true,
+        "features": [
+            "Access to gym equipment",
+            "Locker facility",
+            "Unlimited group classes",
+            "2 personal training sessions/month",
+            "Free WiFi",
+            "Body composition analysis",
+            "Access to cardio & strength zones",
+            "Priority support",
+            "Steam room access"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Premium Plan",
+        "price": "$70/month",
+        "description": "All-inclusive membership with unlimited coaching and spa access.",
+        "popular": false,
+        "features": [
+            "All Standard features",
+            "Unlimited personal training",
+            "Custom diet & nutrition plan",
+            "24/7 gym access",
+            "Sauna & spa access",
+            "Private locker",
+            "Recovery zone (massage chairs)",
+            "VIP lounge access",
+            "Personal fitness coach",
+            "Supplement guidance"
+        ]
+    }
+]

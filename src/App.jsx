@@ -1,5 +1,12 @@
 
+import { Suspense } from 'react'
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import PricingOptions from './components/PricingOptions/PricingOptions'
+
+
+const pricingPromise = fetch('pricingData.json')
+  .then(res => res.json())
 
 function App() {
 
@@ -8,7 +15,15 @@ function App() {
     <>
 
 
-      <h1 className='bg-green-500  text-center text-white'>Bangladesh</h1>
+      <header>
+        <NavBar></NavBar>
+      </header>
+
+      <main className='w-11/12 mx-auto'>
+        <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
+          <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
+        </Suspense>
+      </main >
 
 
     </>
