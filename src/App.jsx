@@ -20,7 +20,9 @@ function App() {
       </header>
 
       <main className='w-11/12 mx-auto'>
-        <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
+        <Suspense className="text-center" fallback={<div className="min-h-[400px] flex items-center justify-center">
+          <span className="loading loading-bars loading-lg"></span>
+        </div>}>
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
       </main >
